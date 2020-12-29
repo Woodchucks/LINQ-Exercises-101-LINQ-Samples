@@ -32,11 +32,11 @@ foreach (var pr in prodSortedByStock)
 
 //create a list of all digits in the array whose second letter is 'i' that is reversed from the order in the original array
 string[] digits = { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
-// var reverseWordsWithLetterIAtIndex1 = digits.Select(dig => dig[1] == 'i').Reverse();
+// var reverseWordsWithLetterIAtIndex1 = digits.Where(dig => dig[1] == 'i').Reverse();
 // foreach (var digit in reverseWordsWithLetterIAtIndex1)
 // {
 //     Console.WriteLine(digit);
-// }        true and false instead of values
+// }
 
 var reverseWordsWithLetterIAtIndex1 = (
     from digit in digits
